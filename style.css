@@ -76,3 +76,11 @@ header ::selection {
 address {
   font: inherit;
 }
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
