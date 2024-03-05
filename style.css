@@ -3,6 +3,7 @@ html {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #333;
 }
+
 h1,
 h2,
 h3 {
@@ -36,10 +37,42 @@ footer {
   margin: 0 auto;
 }
 
+address::before {
+  font-size: 2rem;
+  content: "📫  ";
+}
+
 [href^="#"] {
   color: #333;
   margin: 16px;
 }
 [href^="mail"] {
   color: #333;
+}
+
+article + article,
+footer {
+  border-top: 5px solid #bc8f8f;
+  border-width: thick;
+}
+
+a:hover {
+  background-color: #fffaf0;
+  border-radius: 7px;
+}
+
+main ::selection {
+  background-color: #bc8f8f;
+}
+
+footer ::selection {
+  background-color: #bc8f8f;
+}
+
+header ::selection {
+  background-color: #fffaf0;
+}
+
+address {
+  font: inherit;
 }
