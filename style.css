@@ -1,103 +1,137 @@
-html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #333;
+:root {
+  --color-dark: #3f3127; /* #474F52*/
+  --color-medium-bright: #9f8f83; /**/
+  --color-bright: #d0e2e3; /* #C8D9B3*/
 }
 
-h1,
-h2,
-h3 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
+  margin: 0;
+  line-height: 1.5;
 }
 
 body {
-  margin: 0px;
-  background-color: #fffaf0;
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 80px;
+  line-height: 0.5;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 header {
-  background-color: #bc8f8f;
-  padding: 48px 16px;
-  text-align: center;
-  position: relative;
-  transition: background-color 1.5s;
+  background-color: var(--color-medium-bright);
+  color: var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.statement {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.lorem {
+  align-self: end;
+  margin-bottom: 2rem;
+}
+.socialmedia {
+  display: flex;
+  align-items: center;
+}
+.socialmedia + .socialmedia {
+  margin-left: 1rem;
+}
+.icon {
+  border-right: 2px var(--color-dark) solid;
+  border-bottom: 2px var(--color-dark) solid;
+}
+
+.socialmedia_name {
+  padding-left: 0.5rem;
+}
+.image {
+  height: 100vh;
 }
 
 main {
-  padding: 16px;
-  max-width: 800px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.linksvertikal {
+  background-color: var(--color-bright);
+  color: var(--color-dark);
+  border-right: 2px var(--color-dark) solid;
+  position: relative;
 }
 
-footer {
-  padding: 16px;
-  max-width: 800px;
-  margin: 0 auto;
+.contact {
+  padding-left: 3rem;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 3rem;
+  line-height: 5;
 }
-
-address::before {
-  font-size: 2rem;
-  content: "📫  ";
-}
-
-[href^="#"] {
-  color: #333;
-  margin: 16px;
-}
-[href^="mail"] {
-  color: #333;
-}
-
-article + article,
-footer {
-  border-top: 5px solid #bc8f8f;
-  border-width: thick;
-}
-
-a:hover {
-  background-color: #fffaf0;
-  border-radius: 7px;
-}
-
-main ::selection {
-  background-color: #bc8f8f;
-}
-
-footer ::selection {
-  background-color: #bc8f8f;
-}
-
-header ::selection {
-  background-color: #fffaf0;
-}
-
-address {
-  font: inherit;
-}
-
-.experience-heading {
-  display: inline-block;
-}
-
-.experience-subheading {
-  display: inline-block;
-}
-
-.background-image {
-  background: url(header-animation.jpg);
+.sign-wrapper {
+  display: flex;
+  transform: rotate(270deg);
   position: absolute;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
+  bottom: 13rem;
+  left: -9.5rem;
 }
 
-header:hover {
-  background-color: transparent;
+.experience {
+  background-color: var(--color-bright);
+  color: var(--color-dark);
+}
+.education {
+  background-color: var(--color-dark);
+  color: var(--color-bright);
+  border-left: 2px var(--color-bright) solid;
+}
+.statement,
+.linksvertikal,
+.experience,
+.education {
+  padding: 2rem;
+}
+.kompetenzen-wrapper,
+.skills-ueberschrift {
+  display: flex;
+}
+
+.skills + .skills {
+  margin-left: 1.5rem;
+}
+.skills-ueberschrift h3 {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.lebenslauf-ueberschrift {
+  margin-top: 2rem;
+}
+table {
+  width: 100%;
+}
+.berufsbeschreibung {
+  width: 75%;
+}
+td {
+  height: 3rem;
+}
+li {
+  height: 2rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.5rem;
 }

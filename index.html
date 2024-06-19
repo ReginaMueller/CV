@@ -6,95 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="my first website in coding bootcamp">
     <meta name="author" content="Regina Mueller">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" class="fa-solid fa-envelope"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Regina Mueller</title>
+
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
-        <h1>REGINA MÜLLER</h1>
-        <section>
-            <p>
-                Welcome!
-                Here is some information about me.<br>
-            </p>
-            <p>
-                <a href="#Profile">Profile</a> <a href="#Experience">Experience</a> <a href="#Skills">Skills</a> <a
-                    href="#Contact">Contact</a>
-            </p>
+        <section class="statement">
+            <article class="lorem">
+                <h2>Motivation</h2>
+                <p>
+                    Das ultimative Ziel eines Frontend-Entwicklers ist es, eine harmonische Balance zwischen Ästhetik
+                    und Funktionalität zu schaffen. Die Arbeit eines Frontend-Entwicklers ist mehr als nur das Schreiben
+                    von Code. Es ist eine kreative und technische Kunst, die sich ständig weiterentwickelt. Sie
+                    erfordert ein tiefes Verständnis für Design, Benutzerbedürfnisse und technische Machbarkeit. In
+                    Frontend Entwicklung sehe ich die Möglichkeit, das digitale Gesicht der Welt zu gestalten und zu
+                    verbessern.
+                </p>
+            </article>
+            <div class="socialmedia">
+                <div class="socialmedia">
+                    <img class="icon" src="icons8-linkedin-30.png"">
+                    <a href=" https://www.linkedin.com/in/regina-m%C3%BCller-frontend/">
+                    <p class=" socialmedia_name"><i>@</i>regina-müller-frontend</p>
+                    </a>
+                </div>
+                <div class="socialmedia">
+                    <img class="icon" src="icons8-github-30.png">
+                    <a href="https://github.com/ReginaMueller">
+                        <p class="socialmedia_name"><i>@</i>ReginaMueller</p>
+                    </a>
+                </div>
+            </div>
         </section>
-        <div class="background-image"></div>
+        <img class="image" src="Foto.jpeg" />
     </header>
 
     <main>
-        <article id="Profile">
-            <h2>Profile</h2>
-            <section>
-                <p>
-                    I am currently taking part in the coding bootcamp.
-                    In 2012 I completed my studies in computer science at the University
-                    of Hamburg with a Bachelor of Science in computer science.
-                    But I only worked as a developer for a short time because I started
-                    a family and devoted myself to raising children. Now my children have
-                    grown up and I am returning to my career.
-                    My goal is to get back into the developer industry.
-                </p>
+        <article class="linksvertikal">
 
+            <section class="sign-wrapper">
+                <div class="sign">
+                    <h1>REGINA</h1>
+                    <h1>MÜLLER</h1>
+                </div>
+                <div class="contact">
+                    <span>Frontend Entwicklerin</span>
+                    <div class="contact-wrapper">
+                        <p class="email">reginocika.mueller@gmail.com</p>
+                        <p class="phone">0163 754 84 24</p>
+                    </div>
+                </div>
             </section>
+
         </article>
-        <article id="Experience">
-            <h2>Experience</h2>
-            <section>
-                <h3 class="experience-heading">freelancer in project DeckCadet</h3>
-                <p class="experience-subheading">January 2024 - Present</p>
-                <p>
-                    I'm working on a project called DeckCadet.
-                    It is intended to provide a maritime service
-                    where sailors can report or find incidents
-                    (e.g. oil spills on the water or floating objects).
-                    The DeckCadet platform is primarily intended to protect
-                    life and warn of dangers.
-                </p>
-            </section>
-            <section>
-                <h3 class="experience-heading">operator in the visa center</h3>
-                <p class="experience-subheading">August 2017 - December 2023</p>
-                <p>
-                    I worked with documents in a visa center for 6 years.
-                </p>
-            </section>
+
+        <article class="hauptteil">
+            <div class="experience">
+                <article>
+                    <h2>Kompetenzen</h2>
+                    <div class="kompetenzen-wrapper">
+                        <section class="skills">
+                            <div class="skills-ueberschrift">
+                                <i class="fa-solid fa-wrench"></i>
+                                <h3>technische Kompetenzen</h3>
+                            </div>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>Vue</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </section>
+                        <section class="skills">
+                            <div class="skills-ueberschrift">
+                                <i class="fa-solid fa-feather"></i>
+                                <h3>soziale und methodische Kompetenzen</h3>
+                            </div>
+                            <ul>
+                                <li>Motivation</li>
+                                <li>Analytisches Denken</li>
+                                <li>Konzentration und Fokussierung</li>
+                                <li>Teamfähigkeit</li>
+                                <li>Kommunikationsfähigkeit</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <h2 class="lebenslauf-ueberschrift">Lebenslauf</h2>
+                    <section class="lebenslauf">
+                        <table>
+                            <tr>
+                                <td>2017 - 2023</td>
+                                <td class="berufsbeschreibung">Sachbearbeiterin | Artionis Germany GmbH</td>
+                            </tr>
+                            <tr>
+                                <td>2015 - 2016</td>
+                                <td>Unterstützung bei Projekten | LANIXX IT Consulting</td>
+                            </tr>
+                            <tr>
+                                <td>2013 - 2014</td>
+                                <td>Technisches Projektmanagement | MediaSapiens GmbH</td>
+                            </tr>
+                            <tr>
+                                <td>2011 - 2012</td>
+                                <td>Technisches Support | Rechenzentrum Universität Hamburg</td>
+                            </tr>
+                        </table>
+
+                    </section>
+                </article>
+            </div>
+            <div class="education">
+                <h2>Abschlüsse</h2>
+                <table>
+                    <tr>
+                        <td>2024</td>
+                        <td class="berufsbeschreibung">Zertifikat über Web-Anwendungsentwicklung | Coding Bootcamps
+                            Europe GmbH</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Bachelor of Science | Universität Hamburg</td>
+                    </tr>
+                    <tr>
+                        <td>1998</td>
+                        <td>Abitur | Jung-Stilling-Gymnasium Hilchenbach</td>
+                    </tr>
+                </table>
+
+                <div class="footer">
+                    <img src="icons8-html5-50.png">
+                    <img src="icons8-css3-50.png">
+                    <img src="icons8-js-50.png">
+                    <img src="icons8-vue.js-50.png">
+                </div>
+
+            </div>
+
         </article>
-        <article id="Skills">
-            <h2>Skills</h2>
-            <section>
-                <h3>technical skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                    <li>REACT</li>
-                </ul>
-            </section>
-            <section>
-                <h3>soft skills</h3>
-                <ul>
-                    <li>Problem solving</li>
-                    <li>Independent thinking</li>
-                    <li>Adaptability</li>
-                    <li>Teamwork</li>
-                    <li>Communication</li>
-                </ul>
-            </section>
-        </article>
+
     </main>
-    <footer id="Contact">
-        <h2>Contact</h2>
-        <address>
-            <a href="mailto:reginocika.mueller@gmail.com">Email</a>
-        </address>
-    </footer>
+
 </body>
 
 </html>
